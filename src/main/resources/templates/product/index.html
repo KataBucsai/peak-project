@@ -34,15 +34,14 @@
 <body>
 
 <div class="jumbotron text-center">
-    <h1>Codecool Shop</h1>
+    <h1>Peak</h1>
 </div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
     <div class="navbar-header">
         <ul class="nav navbar-nav">
-            <li><img alt="Brand" src="/img/petit_cookie_cookie.png"/></li>
-            <li><a class="navbar-brand" href="/">Codecool Shop</a></li>
+            <li><img id="peak-logo" alt="Brand" src="/img/peak.png"/></li>
         </ul>
     </div>
     <ul class="nav navbar-nav">
@@ -56,25 +55,6 @@
                 </div>
             </ul>
         </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-               aria-expanded="false">Suppliers<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <div th:each="sup,iterStat : ${supplier}">
-                    <li class="divider"></li>
-                    <li><a th:href="@{~/supplier(supplier=${sup.name},supplier_id=${sup.id})}" th:text="${sup.name}">Supplier name</a></li>
-                </div>
-            </ul>
-        </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            <div id="alert-cart">
-                <!-- cart message will be displayed here -->
-            </div>
-        </li>
-        <li><img id="shopping-cart" class="img-responsive" src="/img/cart-28-24.png"/></li>
-        <li><a id="cart-btn" class="btn" href="/my-cart" th:text="${cartSize}">Amount of products in cart</a></li>
     </ul>
 </nav>
 

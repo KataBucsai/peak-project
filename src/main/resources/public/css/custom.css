@@ -101,3 +101,7 @@ body {
 .table-responsive td a {
     padding: -20px;
 }
+
+#peak-logo {
+    size: 20px;
+}
