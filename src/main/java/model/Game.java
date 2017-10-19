@@ -1,18 +1,20 @@
 package model;
 
-import dao.implementation.GameDaoMem;
+public class Game extends BaseModel {
+    private Category category;
 
-public class Game {
-    static int idGen = 0;
-    private int id;
-
-    public Game() {
-        this.id = idGen;
-        idGen++;
-        GameDaoMem.getInstance().add(this);
+    public Game(String name, String description, Category category) {
+        super(name, description);
+        this.setCategory(category);
     }
 
-    public int getId() {
-        return id;
+    public Category getCategory() {
+        return category;
     }
+
+    public void setCategory(Category category) {
+        this.category = category;
+        this.category.addGame(this);
+    }
+
 }

@@ -1,10 +1,10 @@
 import static spark.Spark.*;
+import static spark.debug.DebugScreen.enableDebugScreen;
 
 import controller.GameController;
 import spark.Request;
 import spark.Response;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
-import static spark.debug.DebugScreen.enableDebugScreen;
 
 public class Main {
 
@@ -16,7 +16,9 @@ public class Main {
         get("/index", (Request req, Response res) -> {
             return new ThymeleafTemplateEngine().render( GameController.renderGames(req, res) );
         });
-
+      
         enableDebugScreen();
     }
+
+
 }
