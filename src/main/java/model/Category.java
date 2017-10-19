@@ -2,6 +2,8 @@ package model;
 
 import java.util.ArrayList;
 
+import static controller.BaseController.initGamesByCategory;
+
 public class Category extends BaseModel {
     private ArrayList<Game> games;
 

@@ -1,10 +1,12 @@
 package dao.implementation;
 
 import dao.GameDao;
+import model.Category;
 import model.Game;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class GameDaoMem implements GameDao{
     private List<Game> games = new ArrayList<>();
@@ -38,6 +40,11 @@ public class GameDaoMem implements GameDao{
     @Override
     public List<Game> getAll(){
         return games;
+    }
+
+    @Override
+    public List<Game> getBy(Category category) {
+        return games.stream().filter(t -> t.getCategory().equals(category)).collect(Collectors.toList());
     }
 
 }
