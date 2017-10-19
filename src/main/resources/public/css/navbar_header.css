@@ -1,0 +1,95 @@
+.navbar {
+    background: #eeeeee;
+    height: 3.1em;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    border-bottom: 1px solid #db5051;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar .navbar-default .navbar-header .navbar-brand > a:hover, .navbar-header > a:focus {
+    background: none;
+    color: #db5051;
+}
+
+.navbar-right li img {
+    padding-top: 10px;
+    margin: auto;
+}
+
+.nav a {
+    margin-right: 15px;
+}
+
+.navbar-header img {
+    width: 30px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #db5051;
+    background-color: transparent;
+    box-shadow:none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    box-shadow:none;
+}
+
+.navbar .navbar-nav > .active > a {
+    background: none;
+}
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #db5051;
+    background: none;
+}
+
+.affix {
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    border-bottom: 0.5px solid #db5051;
+    opacity: 0.9;
+    /*box-shadow: 0px 2px 5px #333333;*/
+}
+
+.affix + .container {
+    padding-top: 70px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: #5e5e5e;
+}
+
+.dropdown-menu li a:hover {
+    color: #db5051;
+    text-decoration: none;
+}
+
+#alert-cart {
+    font-size: 1.2em;
+    color: #db5051;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.jumbotron {
+    font-weight: 500;
+    text-align: center 200px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    background: #eeeeee;
+}
+
+.thumbnail img {
+    display: block;
+    margin: auto;
+}

@@ -16,6 +16,7 @@ public class Main {
         get("/index", (Request req, Response res) -> {
             return new ThymeleafTemplateEngine().render( GameController.renderGames(req, res) );
         });
+      
         enableDebugScreen();
     }
 
